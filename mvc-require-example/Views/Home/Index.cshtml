@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@section require_js_module{
+    <script src="@Url.Content("~/js/require.js")" data-main="@Url.Content("~/js/app/home.index.js")" ></script>
+}
+
+<p>datatime picker below is loaded on document ready</p>
+<div id="text1">
+</div>
+
+<p>code in home.index.js:</p>
+<pre>
+
+require(['../config'], function () {
+    require(['home.index2']);
+})
+, define("home.index2", ['jquery', 'bootstrap-datepicker'], function ($) {
+    $(function () {
+        $('#text1').html('&lt;input type="text" class="datepicker" />');
+        $('input.datepicker').datepicker({
+            format: 'yyyy/mm/dd'
+        });
+    });
+})  
+</pre>
+
+<p>
+    @Html.ActionLink("To Next Page", "Create")
+</p>

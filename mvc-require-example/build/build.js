@@ -1,0 +1,1 @@
+{"appDir":"../js","baseUrl":".","dir":"../js-built","modules":[{"name":"config","include":["bootstrap-datepicker","bootstrap","config","jquery","require"]},{"name":"app/home.create","exclude":["config"]},{"name":"app/home.index","exclude":["config"]}]}

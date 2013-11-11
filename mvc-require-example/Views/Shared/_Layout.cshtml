@@ -1,0 +1,13 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/bootstrap.min.css")" media="screen">
+    <link rel="stylesheet" href="@Url.Content("~/css/datepicker.css")" media="screen">
+    @RenderSection("require_js_module", false)
+</head>
+
+<body>
+    @RenderBody()
+</body>
+</html>
