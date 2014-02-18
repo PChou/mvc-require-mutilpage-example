@@ -20,5 +20,15 @@ namespace mvc_require_example.Controllers
         {
             return View();
         }
+
+        public ActionResult Index2()
+        {
+            return View();
+        }
+
+        public ActionResult Create2()
+        {
+            return View();
+        }
     }
 }

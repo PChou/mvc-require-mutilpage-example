@@ -1,10 +1,10 @@
 ﻿@{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Index2";
 }
 @section require_js_module{
-    <script src="@Url.Content("~/js/require.js")" data-main="@Url.Content("~/js/app/home.index.js")" ></script>
+    <script src="@Url.Content("~/js-built/require.js")" data-main="@Url.Content("~/js-built/app/home.index.js")" ></script>
 }
-
+<p>the js from this page is from js-built, track the network from browser and to see the difference </p>
 <p>datatime picker below is loaded on document ready</p>
 <div id="text1">
 </div>
@@ -24,8 +24,3 @@ require(['../config'], function () {
     });
 })  
 </pre>
-
-<p>
-    @Html.ActionLink("To Next Page", "Create")
-    @Html.ActionLink("To Optimize Version", "Index2")
-</p>

@@ -1,10 +1,10 @@
 ﻿@{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Create2";
 }
 @section require_js_module{
-    <script src="@Url.Content("~/js/require.js")" data-main="@Url.Content("~/js/app/home.create.js")" ></script>
+    <script src="@Url.Content("~/js-built/require.js")" data-main="@Url.Content("~/js-built/app/home.create.js")" ></script>
 }
-
+<p>the js from this page is from js-built, track the network from browser and to see the difference </p>
 <p>this page need not any lib js, only alert!</p>
 
 <p>code in home.create.js:</p>
@@ -20,7 +20,3 @@ require(['../config'], function () {
 
 <p>make change to the build.bat and point to the right place of "node.exe"</p>
 <p>then you can double click the /js/build.bat to compress js files into js-built</p>
-
-<p>
-    @Html.ActionLink("To Optimize Version", "Create2")
-</p>

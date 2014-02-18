@@ -15,6 +15,7 @@ var build = {
 	appDir: '../js',
     baseUrl: '.',
     dir: '../js-built',
+    mainConfigFile: '../js/config.js',
     modules: [
         //First set up the common build layer.
         {

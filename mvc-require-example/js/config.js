@@ -3,9 +3,9 @@
     baseUrl: '/js',
 
     paths: {
-        "jquery": "/js/jquery",
-        "bootstrap": "/js/bootstrap",
-        "bootstrap-datepicker": "/js/bootstrap-datepicker",
+        //"jquery": "jquery",
+        //"bootstrap": "bootstrap",
+        //"bootstrap-datepicker": "bootstrap-datepicker",
     },
 
     shim: {
