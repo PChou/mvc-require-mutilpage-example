@@ -57,7 +57,7 @@ fs.readdir(app_path,function (err,files) {
 			var dotindex = files[i].lastIndexOf('.');
 			if(dotindex >= 0){
 				var extension = files[i].substring(dotindex+1,files[i].length);
-				if(extension == 'js'){
+				if (extension == 'js' && files[i] != 'require.js') { //exclude non-js and require.js itself
 					global_modules.push(files[i].substring(0,dotindex));
 				}
 			}	
